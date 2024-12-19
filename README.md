@@ -43,9 +43,9 @@ docker push ysatii/custom-nginx:1.0.0
 
 https://hub.docker.com/repository/docker/ysatii/custom-nginx/general
 
-https://hub.docker.com/repository/docker/ysatii/custom-nginx/tags/1.0.0/sha256-d0323f74b6af50bb16313c3d751152f61a9d81d2a6faae8cdda9d632db0dab91
+https://hub.docker.com/repository/docker/ysatii/custom-nginx/tags/1.0.0/sha256-d0323f74b6af50bb16313c3d751152f61a9d81d2a6faae8cdda9d632db0dab91  
 
-[Dockerfile ](https://github.com/ysatii/hw4-docker/tree/main/1)
+ссылка на [Dockerfile ](https://github.com/ysatii/hw4-docker/tree/main/1)
 
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
@@ -84,6 +84,15 @@ docker rename melnik-ua-nginx-t2 custom-nginx-t2
 12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+# ответ 3
+![Скриншот 5](https://github.com/ysatii/hw4-docker/blob/main/img/docker5.jpg) 
+Комбинация Ctrl-C передает контейнеру сигнал SIGINT, тем самым завершает его основной процесс и контейнер останавливается.  
+
+установим  nano 
+![Скриншот 6](https://github.com/ysatii/hw4-docker/blob/main/img/docker6.jpg) 
+
+
 
 ## Задача 4
 
