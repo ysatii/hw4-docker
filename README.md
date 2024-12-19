@@ -246,3 +246,19 @@ docker puch localhost:5000/custom-nginx:latest
 ![Скриншот 20](https://github.com/ysatii/hw4-docker/blob/main/img/docker20.jpg)
 ![Скриншот 21](https://github.com/ysatii/hw4-docker/blob/main/img/docker21.jpg)
 ![Скриншот 22](https://github.com/ysatii/hw4-docker/blob/main/img/docker22.jpg)
+
+6. Удалим любой из манифестов компоуза(например compose.yaml). Выполним команду "docker compose up -d". 
+Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+![Скриншот 22](https://github.com/ysatii/hw4-docker/blob/main/img/docker22.jpg)
+
+Found orphan containers ([task5-portainer-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up
+-  проблема в том что есть сироты т.е. контейнеры которые не описаны в манифесте 
+
+-  очищаем контейры командой 
+ ```
+ docker compose up -d --remove-orphans
+ ```
+- гасим проект 
+```
+ docker compose down
+```
