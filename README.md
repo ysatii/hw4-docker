@@ -218,9 +218,21 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 ```
-![Скриншот 13](https://github.com/ysatii/hw4-docker/blob/main/img/docker13.jpg) 
+![Скриншот 13](https://github.com/ysatii/hw4-docker/blob/main/img/docker13.jpg)   
 
 3. проверим какие образы имеються на хостовой машине
 ![Скриншот 14](https://github.com/ysatii/hw4-docker/blob/main/img/docker14.jpg) 
 
-Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
+переименуем образ 
+```
+docker tag ysatii/custom-nginx:1.0.0 localhost:5000/custom-nginx:latest
+```
+
+зальем и проверим его наличии в хранилище
+
+```
+docker puch localhost:5000/custom-nginx:latest
+```
+![Скриншот 15](https://github.com/ysatii/hw4-docker/blob/main/img/docker15.jpg) 
+
+
