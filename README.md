@@ -195,3 +195,27 @@ services:
 7. Удалите любой из манифестов компоуза(например compose.yaml).  Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
+
+# ответ 5
+1. По умолчанию путь к файлу Compose: compose.yaml (предпочтительный) или compose.yml. Compose также поддерживает docker-compose.yaml и docker-compose.yml для обеспечения обратной совместимости с более ранними версиями. Если в рабочем каталоге оба файла, Compose предпочитает compose.yaml.
+
+![Скриншот 12](https://github.com/ysatii/hw4-docker/blob/main/img/docker12.jpg) 
+
+2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла
+
+```
+version: "3"
+
+include:
+  - docker-compose.yaml
+
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    network_mode: host
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+```
+![Скриншот 13](https://github.com/ysatii/hw4-docker/blob/main/img/docker13.jpg) 
