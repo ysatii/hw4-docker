@@ -45,6 +45,8 @@ https://hub.docker.com/repository/docker/ysatii/custom-nginx/general
 
 https://hub.docker.com/repository/docker/ysatii/custom-nginx/tags/1.0.0/sha256-d0323f74b6af50bb16313c3d751152f61a9d81d2a6faae8cdda9d632db0dab91
 
+[Dockerfile ](https://github.com/ysatii/hw4-docker/tree/main/1)
+
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
 - имя контейнера "ФИО-custom-nginx-t2"
