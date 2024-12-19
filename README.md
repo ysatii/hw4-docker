@@ -116,6 +116,38 @@ docker rm -f custom-nginx-t2
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+# ответ 4
+заппускаем два контейнера и проверяем что они в работе
+![Скриншот 10](https://github.com/ysatii/hw4-docker/blob/main/img/docker10.jpg) 
+
+```sh
+docker run -d   --name centos-container   -v "$(pwd):/data"   centos tail -f /dev/null
+docker run -d   --name debian-container   -v "$(pwd):/data"   debian tail -f /dev/null
+docker ps 
+```
+поключимся к первому контейнеру и создадим файл, проверим что он создался 
+```sh
+docker exec -it centos-container bash
+echo "Hello from CentOS container" > /data/file_in_container.txt
+ls /data
+cat /data/file_in_container.txt
+```
+Выйдем  из контейнера командой exit.
+
+Создание файла на хостовой машине
+```sh
+ echo "Hello from host" > "$(pwd)/file_on_host.txt"
+ls "$(pwd)"
+cat "$(pwd)/file_on_host.txt"
+ ```
+
+Просмотр файлов во втором контейнере
+```sh
+docker exec -it debian-container bash
+ls /data
+```
+![Скриншот 11](https://github.com/ysatii/hw4-docker/blob/main/img/docker11.jpg) 
+
 
 ## Задача 5
 
