@@ -245,3 +245,4 @@ docker puch localhost:5000/custom-nginx:latest
 5. Перейдем  на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберем контейнер с nginx и нажмем на кнопку "inspect". В представлении <> Tree развернем поле "Config" и сделаем скриншот от поля "AppArmorProfile" до "Driver".
 ![Скриншот 20](https://github.com/ysatii/hw4-docker/blob/main/img/docker20.jpg)
 ![Скриншот 21](https://github.com/ysatii/hw4-docker/blob/main/img/docker21.jpg)
+![Скриншот 22](https://github.com/ysatii/hw4-docker/blob/main/img/docker22.jpg)
