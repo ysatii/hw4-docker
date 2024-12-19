@@ -239,3 +239,9 @@ docker puch localhost:5000/custom-nginx:latest
 4. Откроем страницу "https://127.0.0.1:9000" и произведем начальную настройку portainer.(логин и пароль адмнистратора)
 ![Скриншот 16](https://github.com/ysatii/hw4-docker/blob/main/img/docker16.jpg)
 ![Скриншот 17](https://github.com/ysatii/hw4-docker/blob/main/img/docker17.jpg)
+![Скриншот 18](https://github.com/ysatii/hw4-docker/blob/main/img/docker18.jpg)
+![Скриншот 19](https://github.com/ysatii/hw4-docker/blob/main/img/docker19.jpg)
+
+5. Перейдем  на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберем контейнер с nginx и нажмем на кнопку "inspect". В представлении <> Tree развернем поле "Config" и сделаем скриншот от поля "AppArmorProfile" до "Driver".
+![Скриншот 20](https://github.com/ysatii/hw4-docker/blob/main/img/docker20.jpg)
+![Скриншот 21](https://github.com/ysatii/hw4-docker/blob/main/img/docker21.jpg)
