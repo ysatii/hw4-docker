@@ -92,7 +92,17 @@ docker rename melnik-ua-nginx-t2 custom-nginx-t2
 установим  nano 
 ![Скриншот 6](https://github.com/ysatii/hw4-docker/blob/main/img/docker6.jpg) 
 
+изменим порт на 81 
+![Скриншот 7](https://github.com/ysatii/hw4-docker/blob/main/img/docker7.jpg) 
+![Скриншот 8](https://github.com/ysatii/hw4-docker/blob/main/img/docker8.jpg) 
+![Скриншот 9](https://github.com/ysatii/hw4-docker/blob/main/img/docker9.jpg) 
 
+контейнер по прежнему ведет проброс трафика на внутренний 80 порт! но он перестал отвечать. дальнейная работа не возможна нет порта который отвечает на веб запросы
+
+удаляем не останавливая
+```sh
+docker rm -f custom-nginx-t2
+```
 
 ## Задача 4
 
