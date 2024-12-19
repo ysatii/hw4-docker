@@ -219,3 +219,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 ```
 ![Скриншот 13](https://github.com/ysatii/hw4-docker/blob/main/img/docker13.jpg) 
+
