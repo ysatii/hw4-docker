@@ -236,3 +236,6 @@ docker puch localhost:5000/custom-nginx:latest
 ![Скриншот 15](https://github.com/ysatii/hw4-docker/blob/main/img/docker15.jpg) 
 
 
+4. Откроем страницу "https://127.0.0.1:9000" и произведем начальную настройку portainer.(логин и пароль адмнистратора)
+![Скриншот 16](https://github.com/ysatii/hw4-docker/blob/main/img/docker16.jpg)
+![Скриншот 17](https://github.com/ysatii/hw4-docker/blob/main/img/docker17.jpg)
