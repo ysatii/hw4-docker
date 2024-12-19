@@ -220,3 +220,7 @@ services:
 ```
 ![Скриншот 13](https://github.com/ysatii/hw4-docker/blob/main/img/docker13.jpg) 
 
+3. проверим какие образы имеються на хостовой машине
+![Скриншот 14](https://github.com/ysatii/hw4-docker/blob/main/img/docker14.jpg) 
+
+Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry. Дополнительная документация: https://distribution.github.io/distribution/about/deploying/
