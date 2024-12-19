@@ -57,9 +57,15 @@ https://hub.docker.com/repository/docker/ysatii/custom-nginx/tags/1.0.0/sha256-d
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 # Ответ 2
+```sh
 docker run -d --name "melnik-ua-nginx-t2" -p 127.0.0.1:8080:80 custom-nginx:1.0.0
+docker rename melnik-ua-nginx-t2 custom-nginx-t2
+```
 
-![Скриншот 1](https://github.com/ysatii/Course_project_on_the_block_System_Administration/blob/extended/img/sait1_13.jpg)  
+![Скриншот 1](https://github.com/ysatii/hw4-docker/blob/main/img/docker1.jpg)  
+![Скриншот 2](https://github.com/ysatii/hw4-docker/blob/main/img/docker2.jpg) 
+![Скриншот 3](https://github.com/ysatii/hw4-docker/blob/main/img/docker3.jpg) 
+![Скриншот 4](https://github.com/ysatii/hw4-docker/blob/main/img/docker4.jpg) 
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
